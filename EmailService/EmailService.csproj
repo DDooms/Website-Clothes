@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="NETCore.MailKit" Version="2.1.0" />
+      <PackageReference Include="RestSharp" Version="112.1.0" />
+      <PackageReference Include="sib_api_v3_sdk" Version="4.0.2" />
+    </ItemGroup>
+
+</Project>

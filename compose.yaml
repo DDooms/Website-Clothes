@@ -1,0 +1,26 @@
+﻿services:
+  clothes:
+    image: clothes
+    build:
+      context: .
+      dockerfile: Clothes/Dockerfile
+    ports:
+        - "5054:8080"
+        - "8081:8081"
+
+  clothes.postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: postgrest
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./.containers/postgres:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+        
+  clothes.redis:
+    image: redis:latest
+    restart: always
+    ports:
+      - "6379:6379"

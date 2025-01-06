@@ -1,0 +1,17 @@
+﻿# Build artifacts
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+
+# Cache files
+*.cache
+
+# IDE-related files
+.vscode/
+.idea/
+
+# Logs
+*.log
